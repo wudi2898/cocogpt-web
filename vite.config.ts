@@ -37,6 +37,7 @@ export default defineConfig((env) => {
     resolve: {
       alias: {
         '@': path.resolve(process.cwd(), 'src'),
+        ws: '/src/lib/realtime-api/lib/ws.js'
       },
     },
     plugins: setupPlugins(viteEnv),
@@ -55,15 +56,15 @@ export default defineConfig((env) => {
           changeOrigin: true, // 允许跨域
           //rewrite: path => path.replace('/api/', '/'),
         },
-         '/sunoapi': {
+        '/sunoapi': {
           target: viteEnv.VITE_APP_API_BASE_URL,
           changeOrigin: true, // 允许跨域  
         },
-         '/uploads': {
+        '/uploads': {
           target: viteEnv.VITE_APP_API_BASE_URL,
           changeOrigin: true, // 允许跨域
           //rewrite: path => path.replace('/api/', '/'),
-        }, 
+        },
         '/openapi': {
           target: viteEnv.VITE_APP_API_BASE_URL,
           changeOrigin: true, // 允许跨域
@@ -73,19 +74,19 @@ export default defineConfig((env) => {
           target: viteEnv.VITE_APP_API_BASE_URL,
           changeOrigin: true, // 允许跨域
           //rewrite: path => path.replace('/api/', '/'),
-        }, 
+        },
         //
         '/viggle': {
           target: viteEnv.VITE_APP_API_BASE_URL,
           changeOrigin: true, // 允许跨域
           //rewrite: path => path.replace('/api/', '/'),
         },
-         '/runwayml': {
+        '/runwayml': {
           target: viteEnv.VITE_APP_API_BASE_URL,
           changeOrigin: true, // 允许跨域
           //rewrite: path => path.replace('/api/', '/'),
         },
-        
+
       },
     },
     build: {

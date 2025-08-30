@@ -81,12 +81,6 @@ importers:
       '@iconify/vue':
         specifier: ^4.1.0
         version: 4.3.0(vue@3.5.20(typescript@4.9.5))
-      '@openai/realtime-api-beta':
-        specifier: github:dooy/openai-realtime-api-beta
-        version: https://codeload.github.com/dooy/openai-realtime-api-beta/tar.gz/e76ff149959a2942c378f3d546ce9a3e33570673
-      '@openai/realtime-wavtools':
-        specifier: github:dooy/openai-realtime-wavtools
-        version: https://codeload.github.com/dooy/openai-realtime-wavtools/tar.gz/1f6584a52a68f048d76f0b3df523ca1533cae04d
       '@tauri-apps/cli':
         specifier: ^1.5.11
         version: 1.6.3
@@ -1016,14 +1010,6 @@ packages:
   '@nodelib/fs.walk@1.2.8':
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
-
-  '@openai/realtime-api-beta@https://codeload.github.com/dooy/openai-realtime-api-beta/tar.gz/e76ff149959a2942c378f3d546ce9a3e33570673':
-    resolution: {tarball: https://codeload.github.com/dooy/openai-realtime-api-beta/tar.gz/e76ff149959a2942c378f3d546ce9a3e33570673}
-    version: 0.0.3
-
-  '@openai/realtime-wavtools@https://codeload.github.com/dooy/openai-realtime-wavtools/tar.gz/1f6584a52a68f048d76f0b3df523ca1533cae04d':
-    resolution: {tarball: https://codeload.github.com/dooy/openai-realtime-wavtools/tar.gz/1f6584a52a68f048d76f0b3df523ca1533cae04d}
-    version: 0.0.0
 
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
@@ -4107,18 +4093,6 @@ packages:
   wrappy@1.0.2:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
 
-  ws@8.18.3:
-    resolution: {integrity: sha512-PEIGCY5tSlUt50cqyMXfCzX+oOPqN0vuGqWzbcJ2xvnkzkq46oOpz7dQaTDBdfICb4N14+GARUDw2XV2N4tvzg==}
-    engines: {node: '>=10.0.0'}
-    peerDependencies:
-      bufferutil: ^4.0.1
-      utf-8-validate: '>=5.0.2'
-    peerDependenciesMeta:
-      bufferutil:
-        optional: true
-      utf-8-validate:
-        optional: true
-
   xml-name-validator@4.0.0:
     resolution: {integrity: sha512-ICP2e+jsHvAj2E2lIHxa5tjXRlKDJo4IdvPvCXbXQGdzSfmSpNVyIKMvoZHjDY9DP0zV17iI85o90vRFXNccRw==}
     engines: {node: '>=12'}
@@ -5223,20 +5197,6 @@ snapshots:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.19.1
-
-  '@openai/realtime-api-beta@https://codeload.github.com/dooy/openai-realtime-api-beta/tar.gz/e76ff149959a2942c378f3d546ce9a3e33570673':
-    dependencies:
-      ws: 8.18.3
-    transitivePeerDependencies:
-      - bufferutil
-      - utf-8-validate
-
-  '@openai/realtime-wavtools@https://codeload.github.com/dooy/openai-realtime-wavtools/tar.gz/1f6584a52a68f048d76f0b3df523ca1533cae04d':
-    dependencies:
-      ws: 8.18.3
-    transitivePeerDependencies:
-      - bufferutil
-      - utf-8-validate
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
@@ -8646,8 +8606,6 @@ snapshots:
       strip-ansi: 7.1.0
 
   wrappy@1.0.2: {}
-
-  ws@8.18.3: {}
 
   xml-name-validator@4.0.0: {}
 

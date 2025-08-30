@@ -21,7 +21,7 @@ const routes: RouteRecordRaw[] = [
       },
     ],
   },
-   {
+  {
     path: '/g',
     name: 'g',
     component: ChatLayout,
@@ -34,7 +34,7 @@ const routes: RouteRecordRaw[] = [
       },
     ],
   },
-   {
+  {
     path: '/m',
     name: 'm',
     component: ChatLayout,
@@ -76,20 +76,20 @@ const routes: RouteRecordRaw[] = [
     ],
   },
 
-    {
+  {
     path: '/music',
     name: 'music',
     component: sunoLayout,
     redirect: '/music/index',
     children: [
       {
-        path: '/music/:uuid?',
-        name: 'music',
+        path: 'index/:uuid?',
+        name: 'music.index',
         component: () => import('@/views/suno/music.vue'),
       },
     ],
 
-    
+
 
   },
   {
@@ -99,8 +99,8 @@ const routes: RouteRecordRaw[] = [
     redirect: '/video/index',
     children: [
       {
-        path: '/video/:uuid?',
-        name: 'video',
+        path: 'index/:uuid?',
+        name: 'video.index',
         component: () => import('@/views/luma/video.vue'),
       },
     ],
@@ -113,8 +113,8 @@ const routes: RouteRecordRaw[] = [
     redirect: '/dance/index',
     children: [
       {
-        path: '/dance/:uuid?',
-        name: 'dance',
+        path: 'index/:uuid?',
+        name: 'dance.index',
         component: () => import('@/views/viggle/dance.vue'),
       },
     ],
@@ -127,8 +127,8 @@ const routes: RouteRecordRaw[] = [
     redirect: '/wav/index',
     children: [
       {
-        path: '/wav/:uuid?',
-        name: 'wav',
+        path: 'index/:uuid?',
+        name: 'wav.index',
         component: () => import('@/views/wav/wav.vue'),
       },
     ],
