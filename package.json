@@ -1,20 +1,8 @@
 {
-  "name": "chatgpt-web-midjourney-proxy",
-  "version": "2.25.3",
+  "name": "cocoGpt",
+  "version": "1.0.0",
   "private": false,
-  "description": "ChatGPT Web Midjourney Proxy",
-  "author": "Dooy <ydlhero@gmail.com>",
-  "keywords": [
-    "chatgpt-web",
-    "chatgpt",
-    "chatbot",
-    "Midjourney",
-    "Midjourney UI",
-    "Midjourney Proxy",
-    "gpts",
-    "gpts ui",
-    "vue"
-  ],
+  "description": "cocoGpt",
   "scripts": {
     "dev": "vite",
     "build": "run-p build-only",
