@@ -16,9 +16,9 @@ const appStore = useAppStoreWithOut()
 const defaultLocale = appStore.language || 'zh-CN'
 
 const i18n = createI18n({
+  legacy: false,
   locale: defaultLocale,
   fallbackLocale: 'en-US',
-  allowComposition: true,
   messages: {
     'en-US': enUS,
     'ko-KR': koKR,
